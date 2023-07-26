@@ -1,5 +1,5 @@
 body{
-    background: #2196F3;
+    background: #3F51B5;
     margin: 0; 
     font-family: 'Roboto', sans-serif;
 }
@@ -17,12 +17,16 @@ header{
     flex-direction: column;
     text-align: center;
     color: #212121;
+    text-decoration: none;
+
+
 }
 
 header a{
 align-items: center;
 font-size: 20px;
 padding-top: 5px;
+text-decoration: none;
 }
 
 
@@ -39,17 +43,36 @@ nav{
 
 nav ul{
     padding: 0;
+    border-bottom: solid 1px #212121;
 }
 
 nav ul li {
     display: inline-block;
     padding: 5px;
+    
 
 }
 
-.iconos {
+.iconos  {
     width: 45px;
-    border: solid 2px #BDBDBD;
+}
+
+.iconos::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue, red, deeppink, blue
+    ) ;
+    background-size:800% ;
+    border-radius: 10px;
+    filter:blur(8px);
+    animation: glowing 20s linear infinite;
 }
 
 .texto {
@@ -70,30 +93,56 @@ nav ul li {
 }
 
 .botones li{
-    margin: 10px 0; 
+    margin: 20px;
+    padding: 10px; 
+    color: #BDBDBD;
 }
-.botones a:link, .botones:visited {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 15px 25px;
-    color: #E1BEE7;
-    border-radius: 5px;
-    border: solid 2px black;
-    background-color: #FFECB3;
-    box-shadow: -5px 5px 0px 0px #111;
+.boton {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-size: 22px;
+    position: relative;
+    border-radius: 10px;
+
 }
 
-.botones a:hover, .botones a:active {
-    background-color: #03A9F4;
-    box-shadow: -5px 5px 0px rgba(0, 0, 0, 1);
+.boton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue, red, deeppink, blue
+    ) ;
+    background-size:800% ;
+    border-radius: 10px;
+    filter:blur(8px);
+    animation: glowing 20s linear infinite;
 }
 
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
 
 footer{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
+    border-top: solid 1px #212121;
 }
 
 
