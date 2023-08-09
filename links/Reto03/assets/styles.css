@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Borel', cursive;
+    background-color: #757575;
+    color: #D1C4E9;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.realizado{
+    text-decoration: line-through;
+    background-color: green;
+}
+
+h1{
+    color: #D1C4E9;
+    font-size: 50px;
+
+}
+
+.contenedor{
+    width: 60%;
+    background: #673AB7;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #1b0a38;
+    border-radius: 10px;
+    border:solid 1px #cd71dd;
+}
+
+.input-tarea{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+input{
+    align-items: center;
+    align-content: center;
+    height: 25px;
+    margin:10px;
+    border: solid 1px #cd71dd;
+    border-radius: 5px;
+    background: #D1C4E9;
+    width: 80%;
+
+}
+
+.btn-input{
+    margin-top: 20px;
+padding: 7px 15px;
+background: #E040FB;
+color: #fff;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 10px #1b0a38;
+}
+
+.btn-input:hover{
+    cursor: pointer;
+    background: #cd71dd;
+}
+
+.btn-input:active{
+    transform: scale(.95);
+}
+
+
+
+.lista-tareas ul {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+li{
+    border-bottom: solid 1px #009688;
+    background-color: #390a8a;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    align-items: center;
+
+}
+
+
+
+.container-check{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tarea-realizada{
+    position: relative;
+    background-color: #cd71dd;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px -5px rgb(0,0,0, 0.4);
+    text-align: center;
+}
+
+.tarea-realizada h2{
+    color: #009688;
+    font-size: 24px;
+}
+
+.btn-cerrar{
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #1b0a38;
+    color: #fff;
+    box-shadow: 0 0 10px #1b0a38;
+}
+
+.btn-cerrar:hover{
+    cursor: pointer;
+    background: #400949;
+}
+
+footer{
+    text-align: center;
+}
+
+
