@@ -1,8 +1,9 @@
 body{
-    background: #512DA8;
+    background: #9077cc;
     margin: 0; 
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 header{
@@ -16,8 +17,10 @@ header{
 
 
 header a{
+    font-size: 20px;
     text-decoration: none;
     color: #000;
+    margin-bottom: 12px;
 }
 
 header a:link, a:visite{
@@ -26,11 +29,13 @@ header a:link, a:visite{
 }
 
 
+
+
 header img{
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    box-shadow: -10px 5px 10px -1px #212121;
+    box-shadow: 0 0 40px  #ec34dd;
     margin-bottom: 20px ;
 }
 
@@ -51,6 +56,8 @@ nav ul li {
 }
 
 .iconos  {
+    margin-top: 20px;
+    margin-right: 10px;
     width: 40px;
 
 }
@@ -62,11 +69,17 @@ main section p a:link, a:visited{
 
 }
 .texto {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    color: #212121;
+    justify-content: center;
+    align-items: center;
+    color: #000;
     font-size: 16px;
-    font-weight: 500;
-    margin: 20px;
+    font-weight: 700;
+    line-height: 1.5rem;
 }
 
 
@@ -74,6 +87,8 @@ main section p a:link, a:visited{
 .botones{
     text-align: center;
     margin-top: 50px;
+    border-bottom: solid 1px #212121;
+
 }
 
 .botones ul{
@@ -88,7 +103,7 @@ main section p a:link, a:visited{
     padding: 10px; 
 }
 .boton {
-    background: #E040FB;
+    background: #a92fbe;
     cursor: pointer;
     border: none;
     padding: 16px 32px;
@@ -130,9 +145,9 @@ main section p a:link, a:visited{
 
 footer{
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
-    border-top: solid 1px #212121;
+    margin-top: 20px;
+
 }
 
 
